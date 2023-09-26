@@ -1,4 +1,3 @@
-
 char *ft_strcapitalize(char *str);
 
 char *ft_strcapitalize(char *str)
@@ -41,13 +40,12 @@ char *ft_strcapitalize(char *str)
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     char str[] = "salut, coMMent tu vas ? 42mots quarante-deux; cinquante+et+un";
 
     printf("Entrada:\n %s\n", str);
     ft_strcapitalize(str);
-
     printf("Salida:\n %s\n", str);
 
     return 0;

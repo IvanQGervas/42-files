@@ -25,14 +25,14 @@ char *ft_strncpy(char *dest, char *src, unsigned int n)
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     char src[16] = "Texto de prueba";
     char dest[50];
 
-    ft_strncpy(dest, src, 14);
+    ft_strncpy(dest, src, 10);
 
     printf("Cadena destino: %s\n", dest);
 
-    return 0;
+    return (0);
 }

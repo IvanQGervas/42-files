@@ -1,7 +1,6 @@
+char *ft_strcpy(char *dest, char *src);
 
-char *ft_strcpy(char *dest, const char *src);
-
-char *ft_strcpy(char *dest, const char *src)
+char *ft_strcpy(char *dest, char *src)
 {
     /* Se iteran todos los caracteres de src */
     while (*src != '\0')
@@ -20,7 +19,7 @@ char *ft_strcpy(char *dest, const char *src)
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     char src[16] = "Texto de prueba";
     char dest[16];

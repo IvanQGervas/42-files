@@ -1,10 +1,7 @@
 char *ft_strupcase(char *str);
 
-/* TODO: Pregutnar si el str que hay que devolver es el original o el modificado */
 char *ft_strupcase(char *str)
 {
-    char *str_original = str;
-
     while (*str)
     {
         if (*str >= 'a' && *str <= 'z')
@@ -18,7 +15,7 @@ char *ft_strupcase(char *str)
         str++;
     }
 
-    return str_original;
+    return str;
 }
 
 #include <stdio.h>
@@ -29,9 +26,9 @@ int main(void)
 
     printf("Cadena original: %s\n", str);
 
-    char *result = ft_strupcase(str);
+    ft_strupcase(str);
 
-    printf("Cadena en mayusculas: %s\n", result);
+    printf("Cadena en mayusculas: %s\n", str);
 
     return (0);
 }

@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 void ft_putstr_non_printable(char *str);
 
@@ -30,11 +29,13 @@ void ft_putstr_non_printable(char *str)
     }
 }
 
+#include <stdio.h>
+
 int main()
 {
     char str[23] = "Coucou\ntu vas bien ?";
 
-    printf("Entrada: %s\n\n", str);
+    printf("Entrada: %s\n", str);
 
     printf("Salida: \n");
     ft_putstr_non_printable(str);

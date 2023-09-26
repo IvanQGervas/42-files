@@ -2,8 +2,6 @@ char *ft_strlowcase(char *str);
 
 char *ft_strlowcase(char *str)
 {
-    char *str_original = str;
-
     while (*str)
     {
         if (*str >= 'A' && *str <= 'Z')
@@ -17,20 +15,20 @@ char *ft_strlowcase(char *str)
         str++;
     }
 
-    return str_original;
+    return str;
 }
 
 #include <stdio.h>
 
 int main(void)
 {
-    char str[8] = "tESTing";
+    char str[8] = "tESTINGg";
 
     printf("Cadena original: %s\n", str);
 
-    char *result = ft_strlowcase(str);
+    ft_strlowcase(str);
 
-    printf("Cadena en minuscula: %s\n", result);
+    printf("Cadena en minuscula: %s\n", str);
 
     return (0);
 }
